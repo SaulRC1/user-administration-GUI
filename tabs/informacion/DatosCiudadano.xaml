@@ -1,0 +1,63 @@
+﻿<Window x:Class="PracticaFinal_Saul_Rodriguez_Naranjo.tabs.informacion.DatosCiudadano"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaFinal_Saul_Rodriguez_Naranjo.tabs.informacion"
+        mc:Ignorable="d"
+        Title="Datos Ciudadano" Icon="../../imagenes/icono.png" Height="450" Width="600">
+    <Grid Background="#263340">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="0,0,-0.4,0" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Margin="40,10,40,10" Background="White" 
+                    BorderBrush="#f1304d" BorderThickness="10">
+                <Image Source="../../imagenes/usuario.png"></Image>
+            </Border>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Name="tbNombre" VerticalAlignment="Center" FontSize="24"
+                           Foreground="White" FontWeight="Bold" Margin="0,19,-0.2,19.4">
+                    Prueba de Nombre
+                </TextBlock>
+
+                <TextBlock Name="tbEdad" Grid.Row="1" VerticalAlignment="Center" FontSize="18"
+                           Foreground="White" FontWeight="Bold">
+                    Edad: 4
+                </TextBlock>
+
+                <TextBlock Name="tbSexo" Grid.Row="2" VerticalAlignment="Center" FontSize="18"
+                           Foreground="White" FontWeight="Bold">
+                    Sexo: Masculino
+                </TextBlock>
+
+            </Grid>
+            
+            
+        </Grid>
+
+        <TextBlock Name="tbNacionalidades" Grid.Row="1" VerticalAlignment="Center" Foreground="White" 
+                   FontSize="26" FontWeight="Bold">
+            Nacionalidades: 
+        </TextBlock>
+
+        <TextBlock Name="tbEstadoCivil" Grid.Row="2" VerticalAlignment="Center" Foreground="White" 
+                   FontSize="26" FontWeight="Bold">
+            Estado Civil: 
+        </TextBlock>
+    </Grid>
+</Window>
